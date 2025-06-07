@@ -1,0 +1,131 @@
+header {
+    color:rgb(61, 163, 59);
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 2.5em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 0em;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+nav {
+    display: block;
+    line-height: 1.5em;
+}
+
+nav ul {
+    background-color: rgb(151, 216, 150);
+}
+
+nav li {
+    display: inline;
+    padding-right: 40px;
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: rgb(177, 243, 204);
+}
+
+nav a:hover {
+    color: rgb(61, 163, 59);
+}
+
+nav a:active {
+    color: rgb(0, 255, 26);
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 1.75em;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-image: url('images/cards/blank.png');
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(61, 163, 59);
+    display: block;
+    margin: 0px auto 50px auto;
+    padding: 30px 70px 30px 70px;
+    font-size: 5em;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    border: 7px, solid rgb(177, 243, 204);
+    border-radius: 12px;
+}
+
+#guessLabel {
+    display: block;
+    background-color: white;
+    margin: 25px auto 25px auto;
+    padding: 15px 35px 15px 35px;
+    font-size: 3em;
+    color: black;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 7px, solid rgb(61, 163, 59);
+    border-radius: 12px;
+}
+
+#timer {
+    display: block;
+    background-color: white;
+    margin: 25px auto 25px auto;
+    padding: 15px 35px 15px 35px;
+    font-size: 3em;
+    color: black;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 7px, solid rgb(61, 163, 59);
+    border-radius: 12px;
+}
+
+footer {
+    background-color: rgb(61, 163, 59);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-link {
+  color: inherit;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
