@@ -1,29 +1,28 @@
 "use strict";
 
 const cards = [
-  {img: 'images/cards/dasbuch.png', color: '#8B4513', audio: 'das Buch'}, {img: 'images/cards/book.png', color: '#8B4513'},
-  {img: 'images/cards/dasbrot.png', color: '#000000', audio: 'das Brot'}, {img: 'images/cards/bread.png', color: '#000000'},
-  {img: 'images/cards/dashaus.png', color: '#FF69B4', audio: 'das Haus'}, {img: 'images/cards/house.png', color: '#FF69B4'},
-  {img: 'images/cards/dasmaedchen.png', color: '#FF4C4C', audio: 'das Maedchen'}, {img: 'images/cards/girl.png', color: '#FF4C4C'},
-  {img: 'images/cards/diefrau.png', color: '#0F1AF3', audio: 'die Frau'}, {img: 'images/cards/woman.png', color: '#0F1AF3'}, 
-  {img: 'images/cards/dietasse.png', color: '#C300FF', audio: 'die Tasse'}, {img: 'images/cards/cup.png', color:'#C300FF'},
-  {img: 'images/cards/diekatze.png', color: '#FFA500', audio: 'die Katze'}, {img: 'images/cards/cat.png', color: '#FFA500'},
-  {img: 'images/cards/dermann.png', color: '#ECFF3D', audio: 'der Mann'}, {img: 'images/cards/man.png',  color: '#ECFF3D'},
-  {img: 'images/cards/derjunge.png', color: '#FF00FF', audio: 'der Junge'}, {img: 'images/cards/boy.png', color: '#FF00FF'},
-  {img: 'images/cards/derhund.png', color: '#00FFFF', audio: 'der Hund'}, {img: 'images/cards/dog.png', color: '#00FFFF'}
+  {img: 'images/lesson1/cards/dasbuch.png', color: '#8B4513', audio: 'das Buch'}, {img: 'images/lesson1/cards/book.png', color: '#8B4513'},
+  {img: 'images/lesson1/cards/dasbrot.png', color: '#000000', audio: 'das Brot'}, {img: 'images/lesson1/cards/bread.png', color: '#000000'},
+  {img: 'images/lesson1/cards/dashaus.png', color: '#FF69B4', audio: 'das Haus'}, {img: 'images/lesson1/cards/house.png', color: '#FF69B4'},
+  {img: 'images/lesson1/cards/dasmaedchen.png', color: '#FF4C4C', audio: 'das Maedchen'}, {img: 'images/lesson1/cards/girl.png', color: '#FF4C4C'},
+  {img: 'images/lesson1/cards/diefrau.png', color: '#0F1AF3', audio: 'die Frau'}, {img: 'images/lesson1/cards/woman.png', color: '#0F1AF3'}, 
+  {img: 'images/lesson1/cards/dietasse.png', color: '#C300FF', audio: 'die Tasse'}, {img: 'images/lesson1/cards/cup.png', color:'#C300FF'},
+  {img: 'images/lesson1/cards/diekatze.png', color: '#FFA500', audio: 'die Katze'}, {img: 'images/lesson1/cards/cat.png', color: '#FFA500'},
+  {img: 'images/lesson1/cards/dermann.png', color: '#ECFF3D', audio: 'der Mann'}, {img: 'images/lesson1/cards/man.png',  color: '#ECFF3D'},
+  {img: 'images/lesson1/cards/derjunge.png', color: '#FF00FF', audio: 'der Junge'}, {img: 'images/lesson1/cards/boy.png', color: '#FF00FF'},
+  {img: 'images/lesson1/cards/derhund.png', color: '#00FFFF', audio: 'der Hund'}, {img: 'images/lesson1/cards/dog.png', color: '#00FFFF'}
 ];
 
 // Set Up Game Board
 const board = document.getElementById('game-board');
 let gameStarted = false;
-let shuffle = cards.sort(() => 0.5 - Math.random());
 let flippedCards = [];
 let lockBoard = false;
 let revealedCards = [];
 let guessCount = 0;
 
 // Set Up Audio Effects
-const matchSound = new Audio('images/sound_effects/match.mp3');
+const matchSound = new Audio('images/lesson1/sound_effects/match.mp3');
 matchSound.load();
 
 const voices = ["Deutsch Male", "Deutsch Female"];
@@ -36,7 +35,7 @@ function soundOff(audio) {
 }
 
 // Set Up Game Statistics
-const button = document.getElementById('button');
+const playButton = document.getElementById('playButton');
 const guessLabel = document.createElement('button');
 guessLabel.id = 'guessLabel';
 const timer = document.createElement('button');
@@ -138,7 +137,7 @@ function createBoard(cardCount) {
           else { // (For mismatched cards)
             setTimeout(() => {
               flippedCards.forEach(cardElement => {
-                cardElement.style.backgroundImage = `url('images/cards/blank.png')`;
+                cardElement.style.backgroundImage = `url('images/lesson1/cards/blank.png')`;
               });
               flippedCards = [];
               lockBoard = false;
@@ -150,7 +149,9 @@ function createBoard(cardCount) {
 }
 
 // Start Button
-button.addEventListener('click', () => {
+playButton.addEventListener('click', () => {
+  let shuffle = cards.sort(() => 0.5 - Math.random());
+
   let h3 = document.querySelector('h3');
   h3.textContent = 'Match the word with its correct picture!';
   h3.style.color = '#000000'
@@ -166,15 +167,16 @@ button.addEventListener('click', () => {
 
   // Change to Reset Button Upon Game's Start
   if (gameStarted == false) {
-    button.textContent = 'RESET';
+    playButton.textContent = 'RESET';
     createBoard(20);
     soundOff('Lass uns gehen!');    
     guessLabel.textContent = `Guesses: ${guessCount}`;
-    button.parentNode.insertBefore(guessLabel, button);
+    playButton.parentNode.insertBefore(guessLabel, playButton);
     guessLabel.insertAdjacentElement('afterend', timer);
     gameStarted = true;
   }
   else {
+    board.innerHTML = '';
     createBoard(20);
   }
 });
@@ -193,3 +195,20 @@ function shoot() {
     shapes: ['star']
   });
 };
+
+// Set Up Navigation Buttons
+const homeButton = document.getElementById("homeButton");
+const backButton = document.getElementById("backButton");
+const forwardButton = document.getElementById("forwardButton");
+
+homeButton.addEventListener("click", () => {
+  window.location.href = "unit1.html"
+});
+
+backButton.addEventListener("click", () => {
+  window.location.href = "lesson1-2.html"
+});
+
+forwardButton.addEventListener("click", () => {
+    window.location.href = "lesson1-4.html"
+});

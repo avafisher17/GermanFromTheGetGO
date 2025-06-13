@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Get a Jump-Start on Your Language Skills">
+        <meta name="keywords" content="German, Duolingo">
+        <title>German From the Get-GO</title>
+        <link rel= "stylesheet" href="multiple_choice.css" type= "text/css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>German From the Get-GO</h1>
+            <h2 class="lessonTitle">Section 1 - Lesson 2</h2>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="unit1.html" title="unit1">Unit 1</a></li>
+            </ul>
+        </nav>
+
+        <main class="wrapper">
+            <div id="toDisappear">
+                <div>
+                    <h3>Let's Learn Some Vocab</h3>
+                    <p>To get you started with <em>der</em>, <em>die</em>, and <em>das</em>, this section has 10 simple, everyday words for you to learn.</p>
+                    <br>
+                    <p><span class="green"><em>***Hint:</em></span> Click on the vocab word if you'd like to hear it spoken aloud!<span class="green"><em>***</em></span></p>
+                </div>
+                <div id="questionDisplay">
+                    <img id="vocabPic" src="" height="200"><h2 id="vocabWord">blank</h2>
+                </div>
+                <h2 id="question">What does this word mean?</h2>
+                <div id="multipleChoice">
+                    <button id="answer1">Answer 1</button> <button id="answer2">Answer 2</button>
+                    <button id="answer3">Answer 3</button> <button id="answer4">Answer 4</button>
+                </div>
+                <div id="scoreArea">
+                    <p id="score">Score: </p><button id="continue">➞</button>
+                </div>
+            </div>
+
+             <div class="endScreen">
+                <h2 id="congrats">Lesson Complete!</h2>
+                <h3 id="congratsMessage">Gut Gemacht!</h3>
+                <p id="paragraph">Here are the words you learned:</p>
+                <table>
+                    <tr>
+                        <td><img src="images/lesson1/raisinbread.png" height="150"></td>
+                        <td><img src="images/lesson1/book.png" height="150"></td>
+                        <td><img src="images/lesson1/house.png" height="150"></td>
+                        <td><img src="images/lesson1/girl.png" height="150"></td>
+                        <td><img src="images/lesson1/woman.png" height="150"></td>
+                    </tr>
+                    <tr>
+                        <td><em>das Brot</em><br>the bread</td>
+                        <td><em>das Buch</em><br>the book</td>
+                        <td><em>das Haus</em><br>the house</td>
+                        <td><em>das Mädchen</em><br>the girl</td>
+                        <td><em>die Frau</em><br>the woman</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/lesson1/cup.png" height="150"></td>
+                        <td><img src="images/lesson1/cat.png" height="150"></td>
+                        <td><img src="images/lesson1/man.png" height="150"></td>
+                        <td><img src="images/lesson1/boy.png" height="150"></td>
+                        <td><img src="images/lesson1/dog.png" height="150"></td>
+                    </tr>
+                    <tr>
+                        <td><em>die Tasse</em><br>the cup</td>
+                        <td><em>die Katze</em><br>the cat</td>
+                        <td><em>der Mann</em><br>the man</td>
+                        <td><em>der Junge</em><br>the boy</td>
+                        <td><em>der Hund</em><br>the dog</td>
+                    </tr>
+                </table>
+                <h3><span class="green"><em>***Hint:</em></span> Notice anything about the German words? They're all capitalized!<span class="green"><em>***</em></span></h3>
+                <p>In German, all nouns (persons, places, or things) begin with a capital letter.</p>
+                <p>It helps them stand out in sentences!</p>
+            </div>
+
+            <div>
+                <button class="navButtons" id="homeButton">Unit 1 Home</button>
+                <button class="navButtons" id="forwardButton">Next Lesson</button>
+                <button class="navButtons" id="backButton">Previous Lesson</button>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+            <script src="lesson1-2.js"></script>
+            <script src="https://code.responsivevoice.org/responsivevoice.js?key=qWN5zmCN"></script>
+        </main>
+
+        <footer>
+            <h6>Copyright &copy; 2025 Ava Fisher. Voice powered by <a href="https://responsivevoice.org/" target="_blank" rel="noopener noreferrer" class="footer-link">ResponsiveVoice</a>. Some rights reserved.</h6>
+        </footer>
+
+    </body>
+
+</html>

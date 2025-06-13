@@ -1,0 +1,233 @@
+header {
+    color:rgb(61, 163, 59);
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 2.5em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+nav {
+    display: block;
+    line-height: 2em;
+}
+
+nav ul {
+    background-color: rgb(151, 216, 150);
+}
+
+nav li {
+    display: inline;
+    padding-right: 40px;
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: rgb(233, 234, 234);
+}
+
+nav a:hover {
+    color: rgb(61, 163, 59);
+}
+
+nav a:active {
+    color: rgb(0, 255, 26);
+}
+
+h3 {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#homepage {
+    display: flex;
+}
+
+#left-frame {
+    width: 150px;
+}
+
+#Til {
+  float: left;
+  margin-top: 0;
+  margin-right: 25px;
+}
+#Til-speaking, #Til-eating {
+  float: right;
+  margin-top: 0;
+  margin-left: 25px;
+}
+
+#sectionhead {
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.title {
+    color:  rgb(61, 163, 59)
+}
+
+.about {
+    width: 27%;
+    text-align: justify;
+    margin: 10px;
+}
+
+.about2 {
+    width: 30%;
+    text-align: justify;
+    margin: 10px;
+    padding: 15px;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+}
+
+p, li {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+}
+
+#right-frame {
+    width: 150px;
+}
+
+footer {
+    background-color: rgb(61, 163, 59);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 3em;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+}
+
+.footer-link {
+  color: inherit;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+#der, #die, #das, #ePlurals, #nPlurals, #specialPlurals, #umlautSection {
+    overflow: auto;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    border: 3px solid lightgray;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#princess, #fight, #bear {
+    float: right;
+    margin-right: 150px;
+}
+
+#derButton, #dieButton, #dasButton, #ePluralsButton, #nPluralsButton, #specialPluralsButton{
+    clear: right;
+    background-color: rgb(61, 163, 59);
+    border: 2px solid rgb(177, 243, 204);
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px 20px;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+#umlautButton {
+    clear: right;
+    background-color: rgb(245, 194, 107);
+    border: 3px solid rgb(253, 160, 0);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px 20px;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.navButtons {
+    background-color: rgb(177, 243, 204);
+    border-radius: 12px;
+    border-color: rgb(177, 243, 204);
+    padding: 3px 30px;
+}
+
+#backButton, #forwardButton {
+    float: right;
+}
+
+h4 {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    background-color: rgb(177, 243, 204);
+    border: 1px solid rgb(177, 243, 204);
+    border-radius: 9px;
+    padding: 15px;
+}
+
+.lessonButton {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: rgb(151, 216, 150);
+    border: 3px solid rgb(61, 163, 59);
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5em;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.lessonTitle {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 0em;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 70px;
+}
+
+.green {
+    color: rgb(61, 163, 59);
+}
+
+.pluralCards {
+    padding:2.5px;
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.plurals {
+    width: 400px;
+}

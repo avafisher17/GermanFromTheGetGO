@@ -1,0 +1,257 @@
+header {
+    color:rgb(61, 163, 59);
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 2.5em;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.lessonTitle {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 0em;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 70px;
+}
+
+nav {
+    display: block;
+    line-height: 2em;
+}
+
+nav ul {
+    background-color: rgb(151, 216, 150);
+}
+
+nav li {
+    display: inline;
+    padding-right: 40px;
+    text-align: center;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: rgb(233, 234, 234);
+}
+
+nav a:hover {
+    color: rgb(61, 163, 59);
+}
+
+nav a:active {
+    color: rgb(0, 255, 26);
+}
+
+h3 {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#homepage {
+    display: flex;
+}
+
+footer {
+    background-color: rgb(61, 163, 59);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 3em;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+}
+
+.footer-link {
+  color: inherit;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+    margin: 0;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.navButtons {
+    background-color: rgb(177, 243, 204);
+    border-radius: 12px;
+    border-color: rgb(177, 243, 204);
+    padding: 3px 30px;
+}
+
+#backButton, #forwardButton {
+    float: right;
+}
+
+h4 {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    background-color: rgb(177, 243, 204);
+    border: 1px solid rgb(177, 243, 204);
+    border-radius: 9px;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+#questionDisplay {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#vocabPic {
+  display: block;
+  margin: 0;
+}
+
+#vocabWord {
+    background-color: rgb(151, 216, 150);
+    padding: 45px;
+    font-size: 4em;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+#answer1, #answer2, #answer3, #answer4 {
+    font-size: 3.5em;
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#multipleChoice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto 20px auto;
+    place-items: center;
+    border-bottom: 5px solid lightgray;;
+    padding-bottom: 10px;
+}
+
+#answer3 {
+    background-color: rgb(223, 253, 196);
+    border: 10px solid rgb(170, 241, 115);
+}
+
+#answer2 {
+    background-color: rgb(112, 241, 153);
+    border: 10px solid rgb(42, 194, 115);
+}
+
+#answer1 {
+    background-color: rgb(171, 255, 180);
+    border: 10px solid rgb(0, 255, 26);
+}
+
+#answer4 {
+    background-color: rgb(198, 247, 224);
+    border: 10px solid rgb(54, 255, 175);
+}
+
+#scoreArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 75px;
+}
+
+#score {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    width: 600px;
+    border: 10px solid rgb(253, 160, 0);
+    border-radius: 12px;
+    text-align: center;
+}
+
+#continue {
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: white;
+    width: 150px;
+    background-color: rgb(61, 163, 59);
+    border: 10px solid rgb(61, 163, 59);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.green {
+    color: rgb(42, 194, 115)
+}
+
+.endScreen {
+    text-align: center;
+    display: none;
+    margin-bottom: 40px;
+}
+
+#congrats {
+    color: rgb(253, 160, 0);
+    margin-bottom: 5px;
+}
+
+#congratsMessage {
+    color: rgb(253, 160, 0);
+    font-size: 2.5em;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#paragraph {
+    margin-bottom: 50px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    width: 300px;
+    padding: 10px;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+#translation {
+    text-align: center;
+}

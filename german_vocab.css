@@ -18,7 +18,7 @@ h2 {
 
 nav {
     display: block;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 nav ul {
@@ -31,6 +31,7 @@ nav li {
     text-align: center;
     font-family: 'Calibri', Arial, Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 1.5em;
 }
 
 nav a:link {
@@ -40,7 +41,7 @@ nav a:link {
 
 nav a:visited {
     text-decoration: none;
-    color: rgb(177, 243, 204);
+    color: rgb(233, 234, 234);
 }
 
 nav a:hover {
@@ -70,12 +71,23 @@ h3 {
 .card {
   width: 150px;
   height: 150px;
-  background-image: url('images/cards/blank.png');
+  background-image: url('images/lesson1/cards/blank.png');
   background-size: contain;
   box-sizing: border-box;
 }
 
-button {
+.navButtons {
+    background-color: rgb(177, 243, 204);
+    border-radius: 12px;
+    border-color: rgb(177, 243, 204);
+    padding: 3px 30px;
+}
+
+#backButton, #forwardButton {
+    float: right;
+}
+
+#playButton {
     background-color: rgb(61, 163, 59);
     display: block;
     margin: 0px auto 50px auto;
@@ -99,6 +111,8 @@ button {
     font-weight: bold;
     border: 7px, solid rgb(61, 163, 59);
     border-radius: 12px;
+    width: 300px;
+    text-align: center;
 }
 
 #timer {
@@ -108,10 +122,12 @@ button {
     padding: 15px 35px 15px 35px;
     font-size: 3em;
     color: black;
+    text-align: center;
     font-family: 'Calibri', Arial, Helvetica, sans-serif;
     font-weight: bold;
     border: 7px, solid rgb(61, 163, 59);
     border-radius: 12px;
+    width: 400px;
 }
 
 footer {
@@ -128,4 +144,15 @@ footer {
 
 .footer-link:hover {
   text-decoration: underline;
+}
+
+.navButtons {
+    background-color: rgb(177, 243, 204);
+    border-radius: 12px;
+    border-color: rgb(177, 243, 204);
+    padding: 3px 30px;
+}
+
+#backButton, #forwardButton {
+    float: right;
 }
