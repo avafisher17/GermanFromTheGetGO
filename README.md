@@ -1,6 +1,4 @@
-# German Vocabulary Concentration Game
-
-The classic matching game where you flip over cards to find matches, featuring beginning German vocab.
+# German From The Get-GO
 
 ## Features
 
@@ -9,11 +7,6 @@ The classic matching game where you flip over cards to find matches, featuring b
 - Timer, for keeping track of play time
 - Guess counter, for keeping track of number of attempts per game
 - Audio and visual effects
-
-## How to Run
-
-1. Download the files from this GitHub repository
-2. Right-click on 'vocab.html' and open the file in your favorite browser
 
 ## Technologies Used
 - JavaScript
